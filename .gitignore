@@ -1,2 +1,3 @@
-.idea
-ipakeyapp/settings.py
+.idea/
+ipakey/settings.py
+*.pyc
