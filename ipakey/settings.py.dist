@@ -3,3 +3,4 @@
 APPLICATION_PORT = 8080
 KRB5_CLIENT_KTNAME = '/path/to/krb5.keytab'
 HOSTNAME = 'example.com'
+PASSWORD = 'securepassword'
