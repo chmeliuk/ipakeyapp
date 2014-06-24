@@ -9,10 +9,9 @@ import tornado.options
 import tornado.web
 
 
-def run():
+def run(opts):
     os.environ['KRB5_CLIENT_KTNAME'] = settings.KRB5_CLIENT_KTNAME
 
     application = tornado.web.Application(handlers)
-    http_server = tornado.httpserver.HTTPServer(application)
-    http_server.listen(settings.APPLICATION_PORT)
+    application.listen(opts.port, opts.address)
     tornado.ioloop.IOLoop.instance().start()
