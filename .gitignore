@@ -1,3 +1,4 @@
 .idea/
 ipakey/settings.py
 *.pyc
+env/
